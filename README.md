@@ -74,8 +74,11 @@ var (Variable Data)
 *Common convention, though not strictly FHS required.
 ## About var:
 + The "Big Three": Most of your disk space issues will happen in `/var/log`, `/var/lib`, or `/var/cache`.
-+ Cleaning Logs: You can check which log is eating space using du -sh /var/log/* | sort -h.
-+ Database Moves: If your database in /var/lib gets too big, admins often move it to a larger drive and "symlink" it back.
++ Cleaning Logs: You can check which log is eating space using `du -sh /var/log/* | sort -h`.
++ Database Moves: If your database in `/var/lib` gets too big, admins often move it to a larger drive and "symlink" it back.
+### About / (root):
+ Every system has a root (/), and you can't make another one, to fix that you would rename / to sysroot or root and then the Computer will turn it into /.
+  
 ## Commands:
 + cat: Utility to concatenate files to standard output
 + chgrp: Utility to change file group ownership
