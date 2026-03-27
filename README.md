@@ -78,7 +78,24 @@ var (Variable Data)
 + Database Moves: If your database in `/var/lib` gets too big, admins often move it to a larger drive and "symlink" it back.
 ### About / (root):
  Every system has a root (/), and you can't make another one, to fix that you would rename / to sysroot or root and then the Computer will turn it into /.
-  
+## FHS etc:
+/etc (System Configuration)
+┃
+┣━━ fstab (Static information about filesystems/mounts)
+┃
+┣━━ group (User group definitions)
+┃
+┣━━ hostname (The system's network name)
+┃
+┣━━ network/ (Network interface configurations)
+┃
+┣━━ passwd (User account information)
+┃
+┣━━ shadow (Secure user password hashes)
+┃
+┣━━ sudoers (Rules for sudo/admin access)
+┃
+┗━━ ssh/ (SSH server and client configurations)
 ## Commands:
 + cat: Utility to concatenate files to standard output
 + chgrp: Utility to change file group ownership
